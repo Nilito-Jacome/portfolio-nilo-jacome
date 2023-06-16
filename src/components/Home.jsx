@@ -23,7 +23,7 @@ const Home = () => {
             <Card style={{ width: "100%" }}>
               <Card.Img variant="top" src="/Nilo3.jpeg" />
               <Card.Body>
-                <Card.Title>Soy Nilo Ángel Jácome Riera</Card.Title>
+                <Card.Title><p>Soy Nilo Ángel Jácome Riera</p></Card.Title>
                 <Card.Text>
                   Ingeniero Eléctrico y Developer Front End.
                 </Card.Text>
@@ -67,8 +67,9 @@ const Home = () => {
                     <Modal.Title>Datos de contacto</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    <p>Email: nilitojacome@gmail.com</p>
-                    <p>Cel: +593-099-897-1284</p>
+                    Email: nilitojacome@gmail.com
+                    <br />
+                    Cel: +593-099-897-1284
                   </Modal.Body>
                   <Modal.Footer>
                     <Card.Link
@@ -90,28 +91,28 @@ const Home = () => {
                 <Row>
                   <Card.Title>App Ecommerce</Card.Title>
                   <Col md={8} lg={9}>
-                    <Card.Text className="pt-3">
-                      <p>
+                    <Card.Text className="pt-3">                     
                         Es una aplicación que simula una tienda online de
                         compras, esta tiene diferentes productos para elegir.
-                      </p>
-                      <p>
+                     <br />
                         Antes de iniciar sesión solo se puede buscar el
                         producto, filtrar por categorías o ingresar a ver el
                         detalle de cada uno de ellos.
-                      </p>
-                      <p>
-                        Ya iniciada la sesión puedes añadir al carrito las
+                      <br />
+                        Iniciada la sesión puedes añadir al carrito las
                         cantidades que sean necesarias y de cualquier producto
                         que desee, puede añadir varios productos, existen
                         mensajes de alerta, puede visualizar los productos
                         enviados al carrito, comprarlos o eliminarlos, también
                         puede ver el historial de las compras realizadas en la
                         tienda.
-                      </p>
-                      <p>Para verificar su funcionamiento puede utilizar:</p>
-                      <p>nilitojacome@gmail.com</p>
-                      <p>najr1978.</p>
+                      <br />
+                      <br />
+                      Para verificar su funcionamiento puede utilizar:
+                      <br />
+                      nilitojacome@gmail.com
+                      <br />
+                      najr1978
                     </Card.Text>
                   </Col>
                   <Col md={4} lg={3}>
