@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <header class="header">
+    </header>
+    <main> 
+        <section id="contact" class="contact section">
+        <h2 class="section__title">Contact Information</h2>
+        <div class="contact__container grid--container">
+          <div class="contact__info">
+            <h3 class="contact__info-title">Information</h3>
+            <p class="contact__info-description">
+              In case more information is required,
+              you can do as follows.
+            </p>
+
+            <address class="contatc__info-data">
+              <div class="contact__info-item">
+                <i class='bx bxl-whatsapp'></i>
+
+                <span class="contact__info-number">
+                  <a
+                    href="https://wa.me/+5930998971284?text=Tu%20Mensaje%20De%20Texto"
+                    target="_blank"
+                    >Send message to WhatsApp</a
+                  >
+                </span>
+              </div>
+
+              <div class="contact__info-item">
+                <i class="bx bx-phone"></i>
+
+                <span class="contact__info-number">
+                  <a href="tel:1-234-567-8910"> +593 0998971284 </a>
+                </span>
+              </div>
+
+              <div class="contact__info-item">
+                <i class="bx bxs-envelope"></i>
+
+                <span class="contact__info-mail">
+                  <a id="mail" href="mailto:nilitojacome@gmail.com"> nilitojacome@gmail.com</a>
+                </span>
+              </div>
+
+              <div class="contact__info-item">
+                <i class="bx bx-map"></i>
+
+                <span class="contact__info-map"> Quito, Ecuador. </span>
+              </div>
+            </address>
+          </div>
+
+          <div class="contact__form">
+            <h3 class="contact__form-title">Send Message</h3>
+
+            <form id="form" class="contact__form-container">
+              <div class="contact__form-group">
+                <label for="name" class="contact__form-label">Name</label>
+                <input type="text" id="name" name="name" class="contact__form-input" />
+              </div>
+
+              <div class="contact__form-group">
+                <label for="subject" class="contact__form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="contact__form-input" />
+              </div>
+
+              <div class="contact__form-group">
+                <label for="message" class="contact__form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn contact__form-button">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        </section>
+    </main> 
+
+    <footer class="footer section">
+        <div class="footer__container grid--container">
+          <div class="footer__info">
+            <h3 class="footer__title">Nilo Jácome</h3>
+            <p class="footer__description">
+              I am from Ecuador, Electrical Engineer by profession, I am dabbling in programming as another profession because I was always attracted to different programming languages.
+            </p>
+          </div>
+  
+          <div class="footer__social">
+            <h3 class="footer__title">Social Networks</h3>
+  
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://www.facebook.com/nilo.jacome.3" target="_blank"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+              </li>
+  
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://www.instagram.com/nilitojacome/" target="_blank"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+              </li>
+    
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://www.linkedin.com/in/nilo-angel-1271b520b/?trk=public_profile-settings_edit-profile-content&original_referer=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2F&originalSubdomain=ec" target="_blank"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <p class="footer__copy">&copy; 2023, All rights reserved</p>
+      </footer>
+  
+      <script>
+        const formulario = document.querySelector('#form')
+        const sendForm = document.querySelector('#mail')
+  
+        formulario.addEventListener('submit', handleSubmit)
+  
+        function handleSubmit(e) {
+          e.preventDefault()
+          const form = new FormData(this)
+          sendForm.setAttribute('href', `mailto:nilitojacome@gmail.com?subject=${form.get('name')} - ${form.get('subject')}&body=${form.get('message')}`)
+          sendForm.click()
+        }
+      </script>  
+</body>
+</html>

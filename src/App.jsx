@@ -4,7 +4,7 @@ import NavBarPort from './components/NavBarPort'
 import Home from './components/Home'
 import About from './components/About'
 import Proyectos from './components/Proyectos'
-
+import Contacto from './components/Contacto'
 
 
 
@@ -27,7 +27,11 @@ function App() {
           <Route
             element = {<Proyectos/>}
             path = "/proyectos"
-          />              
+          />  
+          <Route
+            element = {<Contacto/>}
+            path = "/contacto"
+          />             
         </Routes>
       
       </HashRouter>

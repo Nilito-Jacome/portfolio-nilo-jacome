@@ -5,9 +5,16 @@ import { Link } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { BsLinkedin, BsInstagram, BsFacebook} from "react-icons/bs";
+import { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
 
 
 const Home = () => {
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
       <div>
         <h1 className="text-center">Bienvenidos a mi portafolio</h1>
@@ -22,22 +29,57 @@ const Home = () => {
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroup.Item as={Link} to="https://linkedin.com/in/nilo-jácome-riera" target="_blank">
-                    Linkedin 
-                    <BsLinkedin />
-                    </ListGroup.Item>
-                <ListGroup.Item as={Link} to="https://www.instagram.com/nilitojacome/" target="_blank">
-                    Instagram
-                    <BsInstagram />
-                    </ListGroup.Item>
-                <ListGroup.Item as={Link} to="https://www.facebook.com/nilo.jacome/" target="_blank">
-                    Facebook
-                    <BsFacebook />
-                    </ListGroup.Item>
+                <ListGroup.Item
+                  as={Link}
+                  to="https://linkedin.com/in/nilo-jácome-riera"
+                  target="_blank"
+                >
+                  Linkedin
+                  <BsLinkedin />
+                </ListGroup.Item>
+                <ListGroup.Item
+                  as={Link}
+                  to="https://www.instagram.com/nilitojacome/"
+                  target="_blank"
+                >
+                  Instagram
+                  <BsInstagram />
+                </ListGroup.Item>
+                <ListGroup.Item
+                  as={Link}
+                  to="https://www.facebook.com/nilo.jacome/"
+                  target="_blank"
+                >
+                  Facebook
+                  <BsFacebook />
+                </ListGroup.Item>
               </ListGroup>
               <Card.Body>
-                <Card.Link href="">Descarga</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <Card.Link href="/Nilo_cv.pdf" target="_blank">
+                  Descargar cv
+                </Card.Link>
+                <br />
+                <Card.Link onClick={handleShow} style={{cursor: "pointer"}}>
+                  Datos de Contacto
+                </Card.Link>
+                <Modal show={show} onHide={handleClose} size="sm">
+                  <Modal.Header>
+                    <Modal.Title>Datos de contacto</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <p>Email: nilitojacome@gmail.com</p>
+                    <p>Cel: +593-099-897-1284</p>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Card.Link
+                      variant="secondary"
+                      onClick={handleClose}
+                      style={{cursor: "pointer"}}
+                    >
+                      Close
+                    </Card.Link>
+                  </Modal.Footer>
+                </Modal>
               </Card.Body>
             </Card>
           </Col>
@@ -49,24 +91,27 @@ const Home = () => {
                   <Card.Title>App Ecommerce</Card.Title>
                   <Col md={8} lg={9}>
                     <Card.Text className="pt-3">
-                        <p>
-                            Es una aplicación que simula una tienda online de compras, esta tiene diferentes productos para elegir.
-                        </p>
-                        <p>
-                            Antes de iniciar sesión solo se puede buscar el producto, filtrar por categorías o ingresar a ver el detalle de cada uno de ellos.
-                        </p>
-                        <p>
-                            Ya iniciada la sesión puedes añadir al carrito las cantidades que sean necesarias y de cualquier producto que desee, puede añadir varios productos, existen mensajes de alerta, puede visualizar los productos enviados al carrito, comprarlos o eliminarlos, también puede ver el historial de las compras realizadas en la tienda.
-                        </p>
-                        <p>
-                            Para verificar su funcionamiento puede utilizar:
-                        </p>       
-                        <p>
-                            nilitojacome@gmail.com
-                        </p>          
-                        <p>
-                            najr1978.
-                        </p> 
+                      <p>
+                        Es una aplicación que simula una tienda online de
+                        compras, esta tiene diferentes productos para elegir.
+                      </p>
+                      <p>
+                        Antes de iniciar sesión solo se puede buscar el
+                        producto, filtrar por categorías o ingresar a ver el
+                        detalle de cada uno de ellos.
+                      </p>
+                      <p>
+                        Ya iniciada la sesión puedes añadir al carrito las
+                        cantidades que sean necesarias y de cualquier producto
+                        que desee, puede añadir varios productos, existen
+                        mensajes de alerta, puede visualizar los productos
+                        enviados al carrito, comprarlos o eliminarlos, también
+                        puede ver el historial de las compras realizadas en la
+                        tienda.
+                      </p>
+                      <p>Para verificar su funcionamiento puede utilizar:</p>
+                      <p>nilitojacome@gmail.com</p>
+                      <p>najr1978.</p>
                     </Card.Text>
                   </Col>
                   <Col md={4} lg={3}>
