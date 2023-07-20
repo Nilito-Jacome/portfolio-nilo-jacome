@@ -18,7 +18,7 @@ const NavBarPort = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1" as={Link} to="/about">
+            <Nav.Link href="#action1" as={Link} to="/about1">
               Sobre mi
               </Nav.Link>
             <Nav.Link href="#action2" as={Link} to="/proyectos">
