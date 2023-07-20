@@ -284,6 +284,10 @@ img.foto {
         width: 80px;
         
     }
+    img.card-img-top.foto1,
+    img.card-img-top.foto {
+        height: 50px;
+    }
     .boton1.btn.btn-primary, 
     .boton.btn.btn-primary {
         font-size: 4px;
@@ -351,6 +355,10 @@ img.foto {
     .title-t1.card-title.h5 {
         font-size: 30px;
     }
+    img.card-img-top.foto1,
+    img.card-img-top.foto {
+        height: 100px;
+    }
     .tarjet,
     .tarjet1 {
         width: 200px;
@@ -395,6 +403,10 @@ img.foto {
     .tarjet,
     .tarjet1 {
         width: 300px;
+    }
+    img.card-img-top.foto1,
+    img.card-img-top.foto {
+        height: 150px;
     }
     img.card-img-top {
         height: 300px;
