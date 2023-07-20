@@ -180,7 +180,7 @@ img.foto {
 
 /******TODO A CERCA DE MI******/
 .About1 {
-    background-image: url('/public/Galaxia.avif ');
+    background-image: url('/public/Galaxia.jpg');
     background-repeat : no-repeat;
     background-size: cover;
     display: flex;
@@ -382,7 +382,7 @@ img.foto {
 }     
 @media screen and (min-width: 500px) {
     .About1 {
-        background-image: url('/public/Galaxia.avif ');
+        background-image: url('/public/Galaxia.jpg');
         background-repeat : no-repeat;
         background-size: cover;
         height: 200vh;
@@ -400,7 +400,7 @@ img.foto {
 }
 @media screen and (min-width: 700px) {
     .About1 {
-        background-image: url('/public/Galaxia.avif ');
+        background-image: url('/public/Galaxia.jpg');
         background-repeat : no-repeat;
         background-size: cover;
         height: 150vh;
@@ -408,7 +408,7 @@ img.foto {
 }
 @media screen and (min-width: 900px) {
     .About1 {
-        background-image: url('/public/Galaxia.avif ');
+        background-image: url('/public/Galaxia.jpg');
         background-repeat : no-repeat;
         background-size: cover;
         height: 85vh;
