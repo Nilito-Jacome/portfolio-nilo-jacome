@@ -211,7 +211,7 @@ h1 {
     background-image: url('/public/Galaxia.jpg');
     background-repeat : no-repeat;
     background-size: cover;
-    height: 110vh;
+    height: 130vh;
 }
 .ab1 {
     display: grid;
@@ -362,6 +362,7 @@ img.foto {
     .card-img-top.picture {
         width: min(100%, 150px);
         height: 100px;
+        background-color: var(--color-back-image);
     }
     .card-title.h5 {
         font-size: 0.7rem;
@@ -474,6 +475,7 @@ img.foto {
     .card-img-top.picture {
         width: min(100%, 250px);
         height: 150px;
+        background-color: var(--color-back-image);
     }
     .card-title.h5 {
         font-size: 0.9rem;
@@ -588,6 +590,7 @@ img.foto {
     .card-img-top.picture {
         width: min(100%, 200px);
         height: 170px;
+        background-color: var(--color-back-image);
     }
     .card-title.h5 {
         font-size: 1.2rem;
@@ -689,6 +692,7 @@ img.foto {
     .card-img-top.picture {
         width: min(100%, 300px);
         height: 200px;
+        background-color: var(--color-back-image);
     }
     .card-title.h5 {
         font-size: 1.4rem;
@@ -802,6 +806,7 @@ img.foto {
     .card-img-top.picture {
         width: min(100%, 300px);
         height: 200px;
+        background-color: var(--color-back-image);
     }
     .card-title.h5 {
         font-size: 1.6rem;
@@ -906,6 +911,7 @@ img.foto {
     .card-img-top.picture {
         width: min(100%, 350px);
         height: 300px;
+        background-color: var(--color-back-image);
     }
     .card-title.h5 {
         font-size: 2rem;
@@ -1022,6 +1028,7 @@ img.foto {
     .card-img-top.picture {
         width: min(100%, 350px);
         height: 300px;
+        background-color: var(--color-back-image);
     }
     .card-title.h5 {
         font-size: 2.2rem;
