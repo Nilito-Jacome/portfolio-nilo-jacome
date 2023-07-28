@@ -13,14 +13,16 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Bienvenidos a mi portafolio</h1>
+      <h1 className="title1">Bienvenidos a mi portafolio</h1>
       <div className="home">
         <Card className="name">
-          <Card.Img variant="top" src="/Nilo.png" width="10" height="200" />
-          <Card.Body>
+          <Card.Img className="nilo" variant="top" src="/Nilo.png" width="10" height="200" />
+          <Card.Body className="soy">
             <Card.Title>Soy Nilo Ángel Jácome Riera</Card.Title>
             <Card.Text>
-              DEVELOPER WEB FULL-STACK | INGENIERO ELÉCTRICO.
+              DEVELOPER WEB FULL-STACK
+              <br />
+              INGENIERO ELÉCTRICO.
             </Card.Text>
           </Card.Body>
         </Card>
@@ -55,10 +57,9 @@ const Home = () => {
           </ListGroup.Item>
           <Card.Body className="cont">
             <Card.Img
+              className="picture"
               variant="top"
-              src="/usuario1.png"
-              width="50"
-              height="150"
+              src="/usuario1.png"              
             />
             <Card.Link className="desc" href="/Nilo_cv.pdf" target="_blank">
               Descargar cv
@@ -93,10 +94,10 @@ const Home = () => {
           </Card.Body>
         </ListGroup>
 
-        <h1 className="title_home">Proyectos Principales</h1>
-
-        <Card.Body className="tot1">
-          <Card.Title className="title-t1">App Ecommerce</Card.Title>
+        <div id="file-override-custom" className="container">
+          <h1 className="title_home">Proyectos Principales</h1>
+          <Card.Body className="tot1">
+          <Card.Title className="title">App Ecommerce</Card.Title>
           <Card.Text className="parrafo-t1">
             Es una aplicación que simula una tienda online de compras, esta
             tiene diferentes productos para elegir.
@@ -122,8 +123,6 @@ const Home = () => {
               className="foto1"
               variant="top"
               src="/Ecommerce.PNG"
-              width="100"
-              height="100"
             />
             <Button
               type="button"
@@ -136,11 +135,11 @@ const Home = () => {
               Ver aplicación
             </Button>
           </div>
-        </Card.Body>
+          </Card.Body>
 
-        <Card.Body className="tot2">
-          <Card.Title className="title-t1">App Rick And Morty</Card.Title>
-          <Card.Text className="parrafo-t1">
+          <Card.Body className="tot2">
+          <Card.Title className="title">App Rick And Morty</Card.Title>
+          <Card.Text className="parrafo-t2">
             Es una aplicación para visualizar que personajes comparten el mismo
             lugar de residencia, que nombres tienen y en que episodios salen, su
             funcionamiento es randómico solo actualizando la página, también
@@ -151,8 +150,6 @@ const Home = () => {
               className="foto1"
               variant="top"
               src="/Rick.PNG"
-              width="100"
-              height="100"
             />
             <Button
               type="button"
@@ -165,7 +162,34 @@ const Home = () => {
               Ver aplicación
             </Button>
           </div>
-        </Card.Body>
+          </Card.Body>
+
+          <Card.Body className="tot3">
+          <Card.Title className="title">SOCIAL MEDIA DASHBOARD</Card.Title>
+          <Card.Text className="parrafo-t3">
+          Es una aplicación donde se puede observar por mes la cantidad de seguidores, suscriptores, visitas y retweets que tiene una red social, para este caso tenemos facebook, youtube, instagram y twitter,  existe también un darkmode para cambiar de claro a oscuro la vista de la pagina.
+          </Card.Text>
+          <div className="tarjet1">
+            <Card.Img
+              className="foto1"
+              variant="top"
+              src="/social-dashboard.PNG"
+            />
+            <Button
+              type="button"
+              className="boton1 btn-sm"
+              variant="primary"
+              as={Link}
+              to="https://social-media-dashboard-n.netlify.app/"
+              target="_blank"
+            >
+              Ver aplicación
+            </Button>
+          </div>
+          </Card.Body>
+          
+        </div>
+
       </div>
     </div>
   );

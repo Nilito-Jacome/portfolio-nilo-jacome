@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 const Proyectos = () => {
   return (
     <div>
-      <h1>Todos los Proyectos</h1>
+      <h1 className="proyectos">Todos los Proyectos</h1>
       <Card className="projects">
         <Card.Body className="tot">
           <Card.Title className="title-t">App Ecommerce</Card.Title>
@@ -161,7 +161,7 @@ const Proyectos = () => {
         <Card.Body className="tot">
           <Card.Title className="title-t">Memory with React</Card.Title>
           <Card.Text className="parrafo-t">
-            Es una aplicación donde se puede ver el desarrollo de un juego para entrenar la memoria del cerebro.
+            Es una aplicación donde se puede ver el desarrollo de un juego para entrenar la memoria del cerebro, existe también un darkmode para cambiar de claro a oscuro la vista de la pagina.
           </Card.Text>
           <div className="tarjet">
             <Card.Img
@@ -177,6 +177,31 @@ const Proyectos = () => {
               variant="primary"
               as={Link}
               to="https://memory-react-n.netlify.app"
+              target="_blank"
+            >
+              Ver aplicación
+            </Button>
+          </div>
+        </Card.Body>
+        <Card.Body className="tot">
+          <Card.Title className="title-t">SOCIAL MEDIA DASHBOARD</Card.Title>
+          <Card.Text className="parrafo-t">
+          Es una aplicación donde se puede observar por mes la cantidad de seguidores, suscriptores, visitas y retweets que tiene una red social, para este caso tenemos facebook, youtube, instagram y twitter,  existe también un darkmode para cambiar de claro a oscuro la vista de la pagina.
+          </Card.Text>
+          <div className="tarjet">
+            <Card.Img
+              className="foto"
+              variant="top"
+              src="/social-dashboard.PNG"
+              width="100"
+              height="100"
+            />
+            <Button
+              type="button"
+              className="boton btn-sm"
+              variant="primary"
+              as={Link}
+              to="https://social-media-dashboard-n.netlify.app/"
               target="_blank"
             >
               Ver aplicación
