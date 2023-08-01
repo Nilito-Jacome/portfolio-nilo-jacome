@@ -139,9 +139,15 @@ h1 {
 }
 .desc {    
     padding: 20px; 
+    color: var(--color-text-cv);
+}
+.repo {    
+    padding: 20px; 
+    color: var(--color-text-cv);
 }
 .date {
     padding: 10px;
+    color: var(--color-text-cv);
 }
 #file-override-custom.container { 
     width: 100%;
@@ -409,6 +415,9 @@ img.foto {
     .desc {    
         padding: 2px; 
     }
+    .repo {    
+        padding: 2px; 
+    }
     .date {
         padding: 1px;
     }
@@ -520,6 +529,9 @@ img.foto {
         font-size: 0.8rem;
     }
     .desc {    
+        padding: 2px; 
+    }
+    .repo {    
         padding: 2px; 
     }
     .date {

@@ -61,8 +61,21 @@ const Home = () => {
               variant="top"
               src="/usuario1.png"              
             />
-            <Card.Link className="desc" href="/Nilo_cv.pdf" target="_blank">
+            <Card.Link 
+            className="desc"
+             href="/Nilo_cv.pdf" 
+             target="_blank">
               Descargar cv
+            </Card.Link>
+
+            <Card.Link
+              className="repo"
+              as={Link}
+              to="https://github.com/Nilito-Jacome?tab=repositories"
+              target="_blank"
+              style={{ cursor: "pointer" }}
+            >
+               Repositorio github
             </Card.Link>
 
             <Card.Link
