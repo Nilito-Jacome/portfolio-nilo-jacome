@@ -169,6 +169,9 @@ function Proyectos() {
           </div>
         </div>
       </div>
+      <div className="foter">
+        Dererechos registrados por Nilo Jacome
+      </div>
     </div>
   );
 }
