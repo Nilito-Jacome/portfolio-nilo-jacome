@@ -118,4 +118,11 @@ textarea {
         margin: 1px;
         padding: 2px;
     }
+    .iconos-contact {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        place-items: center;
+    }
 }
