@@ -5,7 +5,9 @@ function Navbar () {
     <nav className="navbar">
       <div className="navbar-logo">(■‿■)  Hi!   Welcome</div>        
         <ul className="navbar-links">
+        <h1 className='menu'>Here</h1>
           <li id='uno'>
+            
             <div className='varios'><a href="/">Home</a></div>
             <div className='varios'><a href="#/proyectos">Proyects</a></div>
             <div className='varios'><a href="#/about">About</a></div>
