@@ -17,7 +17,7 @@ function Home() {
             </div>
             <div className="technologies">
                 <div className="skill">                    
-                    <h1>Technological Skills</h1>
+                    <h2>Technological Skills</h2>
                 </div>
                 <div className="iconos1">
                     <div className="vert"></div>

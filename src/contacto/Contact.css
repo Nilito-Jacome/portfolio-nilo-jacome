@@ -22,8 +22,7 @@
 .end1:hover {
     text-shadow: 0 0 0.5em rgb(8, 233, 8), 0 0 0.5em #ee991a;
 }
-.end1 {
-    
+.end1 {    
     font-size: 1.5rem;
 }
 .info-contact{
@@ -103,33 +102,6 @@ textarea {
     transform: scale(1.3);
     transition: 0.6s;
     box-shadow: 0 0 0.5em rgb(8, 233, 8), 0 0 0.5em #ee991a;
-}
-.card-certificates {
-    display: flex;
-    flex-direction: column;    
-}
-.title1 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-.title1:hover {
-    text-shadow: 0 0 0.5em rgb(8, 233, 8), 0 0 0.5em #ee991a;
-}
-.certificates {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    padding-top: 5px;
-    gap: 10px;
-}
-.titul,
-.fundamentos,
-.react1 {
-    width: min(100%, 300px);
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
 }
 
 

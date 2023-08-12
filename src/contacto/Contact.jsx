@@ -3,7 +3,6 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
-
 function Contact() {
   const [value1, setValue1] = useState("");
   const [value2, setValue2] = useState("");
@@ -45,7 +44,7 @@ function Contact() {
           help me develop in this profession.
         </p>
       </div>
-      
+
       <div className="info-contact">
         <div className="card-form">
           <h1 className="title1">Contact Form</h1>
@@ -103,7 +102,9 @@ function Contact() {
               ></textarea>{" "}
             </div>
 
-            <button type="submit" value="Submit" id="input-submit">Send</button>
+            <button type="submit" value="Submit" id="input-submit">
+              Send
+            </button>
           </form>
         </div>
         <div className="iconos-contact">
@@ -113,7 +114,11 @@ function Contact() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src="./icon/linkedin.png" alt="linkedin" className="linkedin"/>
+              <img
+                src="./icon/linkedin.png"
+                alt="linkedin"
+                className="linkedin"
+              />
             </a>
           </div>
           <div className="whatsapp">
@@ -122,7 +127,11 @@ function Contact() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src="./icon/whatsapp.png" alt="whatsapp" className="whatsapp"/>
+              <img
+                src="./icon/whatsapp.png"
+                alt="whatsapp"
+                className="whatsapp"
+              />
             </a>
           </div>
           <div className="github2">
@@ -131,7 +140,7 @@ function Contact() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src="./icon/github2.png" alt="github" className="github2"/>
+              <img src="./icon/github2.png" alt="github" className="github2" />
             </a>
           </div>
           <div className="gmail">
@@ -140,23 +149,14 @@ function Contact() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src="./icon/gmail.png" alt="gmail" className="gmail"/>
+              <img src="./icon/gmail.png" alt="gmail" className="gmail" />
             </a>
           </div>
           <div className="cv">
             <a href="/Nilo_cv.pdf" target="_blank" rel="noreferrer noopener">
-              <img src="./icon/cv.png" alt="cv" className="cv"/>
+              <img src="./icon/cv.png" alt="cv" className="cv" />
             </a>
           </div>
-        </div>
-      </div>        
-      
-      <div className="card-certificates">
-        <h1 className="title1">CERTIFICATES</h1>
-        <div className="certificates">
-          <img src="./icon/titulo.jpg" alt="titulo" className="titul"/>
-          <img src="./icon/fundamentos.png" alt="fundamentos" className="fundamentos"/>
-          <img src="./icon/react1.png" alt="react1" className="react1"/>
         </div>
       </div>
     </div>

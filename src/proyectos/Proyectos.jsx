@@ -1,5 +1,5 @@
 import "./Proyectos.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Proyectos() {
   return (
@@ -32,13 +32,23 @@ function Proyectos() {
               <br />
               najr1978
             </p>
-            <Link
-              className="Aplication"
-              to="https://app-ecommerce-nilo.netlify.app/"
-              target="_blank"
-            >
-              Ver
-            </Link>
+
+            <div className="links">
+              <Link
+                className="Aplication"
+                to="https://app-ecommerce-nilo.netlify.app/"
+                target="_blank"
+              >
+                Ver App
+              </Link>
+              <Link
+                className="Repositorio"
+                to="https://github.com/Nilito-Jacome/app-ecommerce-nilo"
+                target="_blank"
+              >
+                Ver Codigo
+              </Link>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -54,13 +64,23 @@ function Proyectos() {
               salen, su funcionamiento es randómico solo actualizando la página,
               también puedes buscar los lugares de residencia entre 1 y el 126.
             </p>
-            <Link
-              className="Aplication"
-              to="https://app-rickandmorty-nilo.netlify.app/"
-              target="_blank"
-            >
-              Ver
-            </Link>
+
+            <div className="links">
+              <Link
+                className="Aplication"
+                to="https://app-rickandmorty-nilo.netlify.app"
+                target="_blank"
+              >
+                Ver App
+              </Link>
+              <Link
+                className="Repositorio"
+                to="https://github.com/Nilito-Jacome/app-rickandmorty-nilo"
+                target="_blank"
+              >
+                Ver Codigo
+              </Link>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -77,13 +97,22 @@ function Proyectos() {
               twitter, existe también un darkmode para cambiar de claro a oscuro
               la vista de la pagina.
             </p>
-            <Link
-              className="Aplication"
-              to="https://social-media-dashboard-n.netlify.app/"
-              target="_blank"
-            >
-              Ver
-            </Link>
+            <div className="links">
+              <Link
+                className="Aplication"
+                to="https://social-media-dashboard-n.netlify.app/"
+                target="_blank"
+              >
+                Ver App
+              </Link>
+              <Link
+                className="Repositorio"
+                to="https://github.com/Nilito-Jacome/social-media-dashboard"
+                target="_blank"
+              >
+                Ver Codigo
+              </Link>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -98,13 +127,22 @@ function Proyectos() {
               para entrenar la memoria del cerebro, existe también un darkmode
               para cambiar de claro a oscuro la vista de la pagina.
             </p>
-            <Link
-              className="Aplication"
-              to="https://memory-react-n.netlify.app"
-              target="_blank"
-            >
-              Ver
-            </Link>
+            <div className="links">
+              <Link
+                className="Aplication"
+                to="https://memory-react-n.netlify.app"
+                target="_blank"
+              >
+                Ver App
+              </Link>
+              <Link
+                className="Repositorio"
+                to="https://github.com/Nilito-Jacome/memoria-react"
+                target="_blank"
+              >
+                Ver Codigo
+              </Link>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -118,13 +156,22 @@ function Proyectos() {
               Es una aplicación donde se puede ver el desarrollo de buenas
               practicas junto con la aplicacion de la metodologia de BEM.
             </p>
-            <Link
-              className="Aplication"
-              to="https://four-card-frontend-mentor.netlify.app"
-              target="_blank"
-            >
-              Ver
-            </Link>
+            <div className="links">
+              <Link
+                className="Aplication"
+                to="https://four-card-frontend-mentor.netlify.app"
+                target="_blank"
+              >
+                Ver App
+              </Link>
+              <Link
+                className="Repositorio"
+                to="https://github.com/Nilito-Jacome/four-card-frontend-mentor"
+                target="_blank"
+              >
+                Ver Codigo
+              </Link>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -138,13 +185,22 @@ function Proyectos() {
               Es una aplicación que muestra de manera randómica frases de
               proverbios, también varia de igual manera el fondo de la imagen.
             </p>
-            <Link
-              className="Aplication"
-              to="https://fortune-cookies-nilo.netlify.app/"
-              target="_blank"
-            >
-              Ver
-            </Link>
+            <div className="links">
+              <Link
+                className="Aplication"
+                to="https://fortune-cookies-nilo.netlify.app/"
+                target="_blank"
+              >
+                Ver App
+              </Link>
+              <Link
+                className="Repositorio"
+                to="https://github.com/Nilito-Jacome/fortune-cookies-nilo"
+                target="_blank"
+              >
+                Ver Codigo
+              </Link>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -159,19 +215,26 @@ function Proyectos() {
               aplicación, también se puede buscar como esta el clima en otros
               lugares como ciudades o países.
             </p>
-            <Link
-              className="Aplication"
-              to="https://app-clima-nilo-jacome.netlify.app/"
-              target="_blank"
-            >
-              Ver
-            </Link>
+            <div className="links">
+              <Link
+                className="Aplication"
+                to="https://app-clima-nilo-jacome.netlify.app/"
+                target="_blank"
+              >
+                Ver App
+              </Link>
+              <Link
+                className="Repositorio"
+                to="https://github.com/Nilito-Jacome/app_clima"
+                target="_blank"
+              >
+                Ver Codigo
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-      <div className="foter">
-        Dererechos registrados por Nilo Jacome
-      </div>
+      <div className="foter">Dererechos registrados por Nilo Jacome</div>
     </div>
   );
 }

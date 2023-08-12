@@ -9,20 +9,16 @@
     cursor: pointer;
   }  
   .navbar-logo {
-    font-size: 30px;
+    font-size: 2rem;
   }  
   #uno {
     list-style: none;
     display: flex;
     gap: 20px;
   }  
-  .mas {
-    display: flex;
-    gap: 20px;
-  }
   #uno a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--color-back-image);
   }  
   #uno a:hover {
@@ -31,29 +27,36 @@
     text-shadow: 0 0 0.5em rgb(255, 0, 179), 0 0 0.3em #ee991a;
   }
  
-  @media screen and (max-width: 600px) {
-    .navbar{
-      cursor: pointer;
-    }
+  @media screen and (max-width: 600px) {    
     .navbar-logo {
-      font-size: 15px;
+      font-size: 1rem;
     }       
     .navbar-links {
-      cursor: pointer;
-      width: 20px;
-      height: 20px;
-      font-size: 0.8rem;
-      border: solid 1px red;      
-      background-color: aqua;
-    }   
+      margin-right: 0;
+      width: 50px;
+      height: 25px;  
+      color:moccasin;    
+      border: solid 1px rgba(255, 228, 181, 0.308);   
+    }
+    #uno a {
+      font-size: 0.6rem;
+      
+    }
+
     #uno {
-      cursor: pointer;
+      backface-visibility: hidden;
+     }  
+    #uno {    
       display: flex;
       flex-direction: column; 
-      display: none;     
+      gap: 2px;
+      transform: perspective(300px) rotateY(180deg);
     }
-    #uno:hover .varios:hover {
-      display: block;
+    .navbar-links:hover #uno {
+      transform: perspective(300px) rotateY(360deg);
+      border: solid 1px rgba(255, 228, 181, 0.308);        
+      box-shadow: 0px 0px 50px 10px rgba(255, 228, 181, 0.507);
+      background-color: rgba(240, 248, 255, 0.596); 
     }
    
    

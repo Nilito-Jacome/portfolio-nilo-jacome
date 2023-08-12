@@ -10,19 +10,17 @@
     justify-content: center;
     padding-bottom: 10px;
 }
-
 .card {
     position: relative;
     width: min(100%, 300px);
-    height: 420px;    
+    height: 430px;    
 }
 .card div {
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
     backface-visibility: hidden;
     transition: 1s;
 }
@@ -32,31 +30,7 @@
     gap: 50px;   
     transform: perspective(300px) rotateY(0deg);
 }
-.card .back {  
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: justify;
-    align-items: center;
-    background:  rgba(119, 136, 153, 0.39);
-    transform: perspective(300px) rotateY(180deg);    
-}
-.card:hover .front {    
-    transform: perspective(300px) rotateY(180deg);   
-}
-.card:hover .back {        
-    transform: perspective(300px) rotateY(360deg);
-    justify-content: space-between;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .title-card-1 {
-    font-size: 1rem;
-}
-.title-card-2 {
     font-size: 1rem;
 }
 .foto {
@@ -66,20 +40,45 @@
 img.foto  {
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
 }
-.Aplication {  
-    width: 120px;
-    height: 20px;
-    border-radius: 25%;
-    color: aliceblue;    
-    text-align: center;
+.card .back {                     
+    background:  rgba(119, 136, 153, 0.39);
+    transform: perspective(300px) rotateY(180deg);    
 }
-.Aplication:hover {
-    color: seashell;
-    text-shadow: 0 0 0.5em rgb(255, 0, 179), 0 0 0.3em #ee991a;
+.title-card-2 {
+    font-size: 1rem;
 }
 .info-card {
     font-size: 0.8rem;
     text-align: justify;    
+}
+.card:hover .front {    
+    transform: perspective(300px) rotateY(180deg);   
+}
+.card:hover .back {  
+    position: absolute;
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;
+    padding-left: 10px;
+    padding-right: 10px;   
+    transform: perspective(300px) rotateY(360deg);   
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+a.Aplication,
+a.Repositorio {
+    position: relative;
+    margin-top: 400px;
+    color: seashell;
+}
+.Aplication:hover,
+.Repositorio:hover {
+    text-shadow: 0 0 0.5em rgb(255, 0, 179), 0 0 0.3em #ee991a;
 }
 .foter {
     display: flex;
