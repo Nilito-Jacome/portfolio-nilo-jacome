@@ -1,13 +1,12 @@
 
 .navbar {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;   
     background-color: black;
     color: seashell;
-    padding: 10px 20px;
-    cursor: pointer;
-    
+    padding: 10px 20px;        
   }  
   .menu {
     backface-visibility: hidden;
@@ -47,8 +46,7 @@
       margin-right: 0;
       width: 50px;
       height: 25px;         
-      border: solid 1px rgba(255, 228, 181, 0.308);  
-       
+      border: solid 1px rgba(255, 228, 181, 0.308);        
     }
     #uno a {
       font-size: 0.6rem;
@@ -68,9 +66,7 @@
       transform: perspective(300px) rotateY(360deg);
       border: solid 1px rgba(255, 228, 181, 0.308);        
       box-shadow: 0px 0px 50px 10px rgba(255, 228, 181, 0.507);
-       
-    }
-   
-   
+      background-color: rgba(240, 248, 255, 0.596);
+    }  
   }
   
