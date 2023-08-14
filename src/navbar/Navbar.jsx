@@ -9,7 +9,7 @@ function Navbar () {
           <li id='uno'>
             
             <div className='varios'><a href="/">Home</a></div>
-            <div className='varios'><a href="#/proyectos">Proyects</a></div>
+            <div className='varios'><a href="#/proyectos">Projects</a></div>
             <div className='varios'><a href="#/about">About</a></div>
             <div className='varios'><a href="#/contact">Contact</a></div>
           </li>
