@@ -36,6 +36,8 @@
     gap: 10px;
 }
 .titul,
+.full-stack,
+.node_js,
 .fundamentos,
 .react1 {
     width: min(100%, 300px);

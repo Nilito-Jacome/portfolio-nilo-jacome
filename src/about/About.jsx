@@ -32,14 +32,24 @@ function About() {
           className="titul" 
           />
           <img
-            src="./icon/fundamentos.png"
-            alt="fundamentos"
-            className="fundamentos"
+            src="./icon/full-stack.png"
+            alt="full-stack"
+            className="full-stack"
+          />
+          <img
+            src="./icon/node_j.png"
+            alt="node_js"
+            className="node_js"
           />
           <img 
           src="./icon/react1.png" 
           alt="react1" 
           className="react1" 
+          />
+          <img
+            src="./icon/fundamentos.png"
+            alt="fundamentos"
+            className="fundamentos"
           />
         </div>
       </div>
