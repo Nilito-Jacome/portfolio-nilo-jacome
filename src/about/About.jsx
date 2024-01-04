@@ -51,6 +51,11 @@ function About() {
             alt="fundamentos"
             className="fundamentos"
           />
+          <img
+            src="./icon/Scrum.jpg"
+            alt="scrum"
+            className="scrum"
+          />
         </div>
       </div>
     </div>

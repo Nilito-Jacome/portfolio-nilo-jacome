@@ -6,8 +6,19 @@
     align-items: center;   
     background-color: black;
     color: seashell;
-    padding: 10px 20px;        
+    padding: 10px 20px;    
   }  
+  .saludo {
+    display: flex;
+    align-items: center;
+  }
+  ul.navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  .nav {
+    position: fixed; 
+  }
   .menu {
     backface-visibility: hidden;
   }
@@ -16,6 +27,7 @@
   }
   .navbar-logo {
     font-size: 2rem;
+    padding: 15px;
   }  
   #uno {    
     list-style: none;
